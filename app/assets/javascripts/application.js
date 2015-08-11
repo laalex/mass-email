@@ -15,3 +15,10 @@
 //= require jquery_ujs
 //= require_tree .
 //= require froala_editor.min.js
+
+$(window).ready(function(){
+  $(function() {
+      $('#wysiwyg').editable({inlineMode: false});
+      $("a[href='http://editor.froala.com']").parent().remove();
+  });
+});
