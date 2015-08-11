@@ -4,9 +4,9 @@
 # server in each group is considered to be the first
 # unless any hosts have the primary property set.
 # Don't declare `role :all`, it's a meta role
-role :app, %w{deploy@example.com}
-role :web, %w{deploy@example.com}
-role :db,  %w{deploy@example.com}
+role :app, %w{deploy@45.55.83.80}
+role :web, %w{deploy@45.55.83.80}
+role :db,  %w{deploy@45.55.83.80}
 
 set :stage, :production
 
@@ -37,7 +37,7 @@ set :ssh_options, {
 #    auth_methods: %w(password)
 #  }
 # and/or per server
-# server 'example.com',
+# server '45.55.83.80',
 #   user: 'user_name',
 #   roles: %w{web app},
 #   ssh_options: {
