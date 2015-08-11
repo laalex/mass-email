@@ -1,0 +1,29 @@
+<div class="container">
+  <% if !flash.blank? %>
+    <p class="alert alert-success"><%= notice %></p>
+  <% end %>
+  <br />
+  <form action="/send_emails" method="post" enctype='multipart/form-data'>
+  <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+  <div class="row">
+    <div class="col-xs-12">
+      <label>Upload CSV file with emails</label>
+      <br />
+      <input type="file" name="csv_file" class="form-control" />
+    </div>
+    <div class="col-xs-12">
+      <label>Emails subject</label>
+      <br />
+      <input class="form-control" name="subject" type="text" placeholder="subject" />
+    </div>
+    <div class="col-xs-12">
+      <label>Content</label>
+      <br />
+      <textarea id="wysiwyg" name="message" class="form-control"></textarea>
+    </div>
+    <div class="col-xs-12">
+      <br />
+      <input type="submit" class="btn btn-success" value="Send emails">
+    </div>
+  </div>
+</div>
