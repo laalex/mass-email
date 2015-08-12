@@ -19,6 +19,7 @@ require 'capistrano/rails'
 #   https://github.com/capistrano/rails
 #
 require 'capistrano/rvm'
+require 'capistrano/sidekiq'
 # require 'capistrano/rbenv'
 # require 'capistrano/chruby'
 # require 'capistrano/bundler'
