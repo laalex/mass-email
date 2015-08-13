@@ -31,6 +31,9 @@ gem 'bootstrap-sass', '~> 3.3.5'
 gem 'ckeditor', github: 'galetahub/ckeditor'
 gem "font-awesome-rails"
 
+gem 'execjs'
+gem 'therubyracer'
+
 gem 'capistrano', '~> 3.1.0'
 gem 'capistrano-bundler', '~> 1.1.2'
 gem 'capistrano-rails', '~> 1.1.1'
