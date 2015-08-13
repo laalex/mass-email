@@ -13,8 +13,8 @@
 //= require jquery
 //= require bootstrap-sprockets
 //= require jquery_ujs
-//= require_tree .
 //= require froala_editor.min.js
+//= require_tree .
 $(window).ready(function(){
   $(function() {
       $('#wysiwyg').editable({inlineMode: false});
