@@ -174,7 +174,7 @@ GEM
       redis (~> 3.2, >= 3.2.1)
       redis-namespace (~> 1.5, >= 1.5.2)
     slop (3.6.0)
-    sprockets (3.2.0)
+    sprockets (3.3.0)
       rack (~> 1.0)
     sprockets-rails (2.3.2)
       actionpack (>= 3.0)
