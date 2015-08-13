@@ -8,7 +8,7 @@ gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier', '> 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
@@ -28,7 +28,7 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'sidekiq'
 gem 'bootstrap-sass', '~> 3.3.5'
-gem 'ckeditor'
+gem 'ckeditor', github: 'galetahub/ckeditor'
 gem "font-awesome-rails"
 
 gem 'capistrano', '~> 3.1.0'
