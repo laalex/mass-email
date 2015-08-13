@@ -17,7 +17,7 @@ class SendmailController < ApplicationController
       CSV.foreach(path, :headers => true, :col_sep => ';') do |row|
         person = {firstName: row['FIRST_NAME'], lastName: row['LAST_NAME'], email: row['EMAIL']}
         if !person[:email].blank?
-          mail = {message: params[:message], subject: params[:subject]}
+          mail = {message: params[:message]["{:cols=>40, :ckeditor=>{:uiColor=>%22#AADC6E%22}}"], subject: params[:subject]}
           EmailSender.delay.send_email(person, mail)
         end
       end

@@ -28,7 +28,7 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'sidekiq'
 gem 'bootstrap-sass', '~> 3.3.5'
-gem "wysiwyg-rails"
+gem 'ckeditor'
 gem "font-awesome-rails"
 
 gem 'capistrano', '~> 3.1.0'

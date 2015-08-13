@@ -13,11 +13,13 @@
 //= require jquery
 //= require bootstrap-sprockets
 //= require jquery_ujs
-//= require froala_editor.min.js
-//= require_tree .
+
+//= require ckeditor/init
+//= require ckeditor/plugins/plugin
+//= require_tree ./lang
+
 $(window).ready(function(){
   $(function() {
-      $('#wysiwyg').editable({inlineMode: false});
-      $("a[href='http://editor.froala.com']").parent().remove();
+
   });
 });

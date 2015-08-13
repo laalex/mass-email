@@ -31,7 +31,8 @@
       <div class="alert alert-info">
         This is the HTML email that's sent to all the people in the mailing list
       </div>
-      <textarea style="min-height:250px !important;" id="wysiwyg" name="message" class="form-control"></textarea>
+      <%= cktext_area :message, :cols => 40, :ckeditor => {:uiColor => '#AADC6E'} %>
+      <!--<textarea style="min-height:250px !important;" id="wysiwyg" name="message" class="form-control"></textarea>-->
     </div>
     <div class="col-xs-12">
       <br />
