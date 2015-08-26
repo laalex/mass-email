@@ -1,3 +1,5 @@
 <% if !@message.blank? %>
-  <%= @message.html_safe %>
+  <span style="line-height: 1!important;">
+    <%= @message.html_safe %>
+  </span>
 <% end %>

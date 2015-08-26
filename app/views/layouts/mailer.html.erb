@@ -1,10 +1,11 @@
 <html>
   <head>
     <style>
-      * { line-height: 1; }
+      * { line-height: 1 !important; }
+      p {line-height: 1 !important; margin:0 !important; padding:0 !important;}
     </style>
   </head>
-  <body style="line-height: 1 !important; margin:0; padding:0;mso-line-height-rule: exactly;">
+  <body style="line-height: 1 !important; margin:0 !important; padding:0 !important;mso-line-height-rule: exactly !important;">
     <%= yield %>
   </body>
 </html>

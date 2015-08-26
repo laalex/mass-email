@@ -19,7 +19,11 @@
 //= require_tree ./lang
 
 $(window).ready(function(){
-  $(function() {
-
+  var editor = CKEDITOR.instances.message_content;
+  editor.on('instanceReady', function()
+  {
+     var writer = editor.dataProcessor.writer;
+     writer.indentationChars = '';
+     writer.lineBreakChars = '';
   });
 });
